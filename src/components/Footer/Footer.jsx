@@ -9,8 +9,8 @@ const Footer = () => {
     <>
       <footer>
         <Box
-          px={{ xs: 3, sm: 10 }}
-          py={{ xs: 5, sm: 10 }}
+          px={{ xs: 3, sm: 5 }}
+          py={{ xs: 5, sm: 5 }}
           bgcolor="black"
           color="white">
           <Container maxWidth="lg">
@@ -108,7 +108,7 @@ const Footer = () => {
                 src="https://almurut.kg/catalog/view/theme/almurut/image/logow.svg"
                 alt="logo"
                 style={{
-                  width: "200px",
+                  width: "150px",
                   display: "flex",
                   margin: "20px auto",
                 }}
@@ -116,7 +116,7 @@ const Footer = () => {
             </Grid>
             <Box
               textAlign="center"
-              pt={{ xs: 5, sm: 10 }}
+              pt={{ xs: 0, sm: 10 }}
               pb={{ xs: 5, sm: 0 }}
               style={{
                 display: "flex",
