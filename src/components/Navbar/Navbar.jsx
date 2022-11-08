@@ -17,6 +17,9 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 
 import { orange } from "@mui/material/colors";
+import { Link } from "react-router-dom";
+
+import "./Navbar.css";
 
 const color = orange[900];
 
@@ -188,6 +191,19 @@ const Navbar = () => {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
+          <Box
+            sx={{
+              display: "flex",
+              width: "50%",
+              justifyContent: "space-around",
+              flexWrap: "wrap",
+              textAlign: "center",
+            }}>
+            <Link to="/">Главная</Link>
+            <Link to="/delivery">Доставка</Link>
+            <Link to="/aboutus">О нас</Link>
+            <Link to="/add">Добавить товары</Link>
+          </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
