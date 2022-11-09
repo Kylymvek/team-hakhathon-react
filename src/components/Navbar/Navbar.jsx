@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -12,14 +12,16 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
+// import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 
 import { orange } from "@mui/material/colors";
 import { Link } from "react-router-dom";
 
 import "./Navbar.css";
+import { basketContext } from "../../context/BasketContextProvider";
+import LiveSearch from "../LiveSearch/LiveSearch";
 
 const color = orange[900];
 
@@ -66,6 +68,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
+
+  const { basketCount } = useContext(basketContext);
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -127,22 +131,22 @@ const Navbar = () => {
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
-            <MailIcon />
+            {/* <MailIcon /> */}
           </Badge>
         </IconButton>
         <p>Messages</p>
       </MenuItem>
-      <MenuItem>
-        <IconButton
+      {/* <MenuItem> */}
+      {/* <IconButton
           size="large"
           aria-label="show 17 new notifications"
           color="inherit">
           <Badge badgeContent={17} color="error">
             <NotificationsIcon />
           </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
+        </IconButton> */}
+      {/* <p>Notifications</p>
+      </MenuItem> */}
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -182,15 +186,7 @@ const Navbar = () => {
               />
             }
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
+          <LiveSearch />
           <Box
             sx={{
               display: "flex",
@@ -210,18 +206,20 @@ const Navbar = () => {
               size="large"
               aria-label="show 4 new mails"
               color="inherit">
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
-              </Badge>
+              <Link to="/basket">
+                <Badge badgeContent={basketCount} color="error">
+                  <ShoppingCartCheckoutIcon />
+                </Badge>
+              </Link>
             </IconButton>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit">
               <Badge badgeContent={17} color="error">
                 <NotificationsIcon />
               </Badge>
-            </IconButton>
+            </IconButton> */}
             <IconButton
               size="large"
               edge="end"

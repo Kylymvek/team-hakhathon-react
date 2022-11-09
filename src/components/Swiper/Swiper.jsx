@@ -13,23 +13,23 @@ import msi from "./Image/msi.jpeg";
 import nvidia from "./Image/nvidia.jpeg";
 import groot from "./Image/groot.jpeg";
 import razer from "./Image/razer.jpeg";
+import { height } from "@mui/system";
 
 const HandleSwiper = () => {
   return (
     <>
       <Swiper
-        style={{ width: "80%" }}
-        spaceBetween={30}
+        style={{ width: "100%" }}
         centeredSlides={true}
         autoplay={{
-          delay: 1000000000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        // navigation={true}
+        modules={[Autoplay, Pagination]}
         className="mySwiper">
         <SwiperSlide>
           <img src={tuf} alt="logo" style={{ width: "100%", height: "100%" }} />

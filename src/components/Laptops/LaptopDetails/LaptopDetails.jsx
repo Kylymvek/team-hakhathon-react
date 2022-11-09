@@ -16,8 +16,9 @@ import "swiper/swiper.min.css";
 import SwiperCore, { Thumbs } from "swiper";
 import { useContext } from "react";
 import { laptopContext } from "../../../context/LaptopContextProvider";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./LaptopDetails.css";
+import { basketContext } from "../../../context/BasketContextProvider";
 
 SwiperCore.use([Thumbs]);
 
@@ -27,7 +28,11 @@ const LaptopDetails = () => {
   const { laptopDetails, readOneLaptop, deleteLaptop } =
     useContext(laptopContext);
 
+  const { addLaptopToBasket } = useContext(basketContext);
+
   const { id } = useParams();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     readOneLaptop(id);
@@ -60,17 +65,17 @@ const LaptopDetails = () => {
                 freeMode={true}
                 watchSlidesProgress={true}
                 className="mySwiper">
-                <SwiperSlide>
+                <SwiperSlide className="swiper-slide-details">
                   <Paper elevation={3}>
                     <img src={laptopDetails.photo1} alt={laptopDetails.brand} />
                   </Paper>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="swiper-slide-details">
                   <Paper elevation={3}>
                     <img src={laptopDetails.photo2} alt={laptopDetails.brand} />
                   </Paper>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="swiper-slide-details">
                   <Paper elevation={3}>
                     <img src={laptopDetails.photo3} alt={laptopDetails.brand} />
                   </Paper>
@@ -85,7 +90,12 @@ const LaptopDetails = () => {
                 <Typography variant="h5">{laptopDetails.model}</Typography>
                 <hr />
                 <Typography sx={{ marginTop: "30px" }}>
+                  О ноутбуке:{<span> </span>}
                   {laptopDetails.description}
+                </Typography>
+                <Typography sx={{ marginTop: "30px" }}>
+                  Цвет: {<span> </span>}
+                  {laptopDetails.color}
                 </Typography>
                 <Alert
                   sx={{
@@ -100,8 +110,7 @@ const LaptopDetails = () => {
                     variant="contained"
                     color="warning"
                     sx={{ marginLeft: "20px" }}
-                    // onClick={() => addlaptopToBasket(laptopDetails)}
-                  >
+                    onClick={() => addLaptopToBasket(laptopDetails)}>
                     Добавить в корзину {<span> </span>} <AddShoppingCart />
                   </Button>
                 </Alert>
@@ -122,8 +131,7 @@ const LaptopDetails = () => {
                     variant="contained"
                     color="warning"
                     sx={{ width: "48%" }}
-                    // onClick={() => navigate(`/edit/${productDetails.id}`)}
-                  >
+                    onClick={() => navigate(`/edit/${laptopDetails.id}`)}>
                     Edit
                   </Button>
                 </Box>

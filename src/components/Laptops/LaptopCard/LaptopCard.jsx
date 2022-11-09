@@ -15,9 +15,9 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { Button } from "@mui/material";
 import { useContext } from "react";
 import { laptopContext } from "../../../context/LaptopContextProvider";
-import DeleteIcon from "@mui/icons-material/Delete";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import "./LaptopCard.css";
 
 const ExpandMore = styled(props => {
   const { expand, ...other } = props;
@@ -36,7 +36,10 @@ const LaptopCard = ({ lapObj }) => {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      className="card-hover"
+      sx={{ width: 250 }}
+      onClick={() => navigate(`/details/${lapObj.id}`)}>
       <CardMedia
         component="img"
         height="194"
@@ -44,27 +47,15 @@ const LaptopCard = ({ lapObj }) => {
         alt={lapObj.brand}
       />
       <CardContent>
-        <Typography variant="body2" color="text.dark">
+        <Typography className="text-hover" variant="body2" color="text.dark">
           {lapObj.brand}
           {<span> </span>}
-          {lapObj.model}
+          {lapObj.model},{<span> </span>}
+          {lapObj.color}
+          {<br />}
+          {lapObj.price} сом
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <AddShoppingCartIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
-
-      <Button
-        variant="contained"
-        endIcon={<RemoveRedEyeIcon />}
-        onClick={() => navigate(`/details/${lapObj.id}`)}>
-        Обзор
-      </Button>
     </Card>
   );
 };
