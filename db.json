@@ -1,37 +1,224 @@
 {
   "laptops": [
     {
-      "brand": "Lenovo",
-      "model": "Legion",
-      "description": "GTX 1060",
-      "color": "чёрный",
-      "price": 70000,
-      "photo1": "https://avatars.mds.yandex.net/i?id=6ea45b615a5e414ae86142ae7b8f14f9-3606203-images-thumbs&n=13",
-      "photo2": "https://avatars.mds.yandex.net/get-mpic/4606255/img_id4306755134526078808.jpeg/orig",
-      "photo3": "https://a.allegroimg.com/s1024/0c7c2d/91812dc7451394a402351a4b9ee3",
-      "id": 2
-    },
-    {
-      "brand": "fs;kjsdflkj",
-      "model": "j;lsdkjflkj",
-      "description": ";lkjslfdjlksdj",
-      "color": "l;kkjlsfkdj;lfdsjl",
-      "price": 290,
-      "photo1": "jlk;kld",
-      "photo2": "ljf;sldjl",
-      "photo3": "jlksfkdj;lj",
-      "id": 3
+      "brand": "Asus",
+      "model": "ROG Strix G517",
+      "description": "Ноутбук Asus ROG Strix G15 AMD Ryzen 7-4800H 16GB DDR 512GB SSD NVIDIA GTX1650 4GB FHD DOS",
+      "color": "Dark Grey",
+      "price": 100000,
+      "photo1": "https://www.kivano.kg/images/product/96085/full/1628743846_24891000.jpg",
+      "photo2": "https://www.kivano.kg/images/product/96085/16287438451694_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/96085/162874384536452_full.jpg",
+      "id": 5
     },
     {
       "brand": "Asus",
-      "model": "X543MA-GQ1013T",
-      "description": "Intel Dual Core N4020 (up to 2.8Ghz), 4GB, 480GB, Intel HD Graphics, 15.6\" HD, WiFi, BT, Cam, Win10 home eng, Eng-Rus",
-      "color": "темно-синий",
-      "price": 25000,
-      "photo1": "data:image/jpeg;base64,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",
-      "photo2": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhAVFRUXFRAVFRUWEBUVFRcVFRUXFhYVFxUYHSggGBslGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFQ8PFSsZFRktKy0tLS0tKy0tLSstNzc3KysrLS0tLSstLSs3Ny0tKy03LS0rKy0tLTcrNysrLSsrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAgMBBAYHBQj/xABDEAACAQICBQkDCQUJAQAAAAAAAQIDEQQSBRMhMXEGByJBUWGBkaEycoIjM0JSkqKxwdEWVHODshQVNERTYsLS8EP/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGhEBAQEBAQEBAAAAAAAAAAAAAAEREgIhQf/aAAwDAQACEQMRAD8A9xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpYrScIO22TW9RSduN2ka/9+0+uE/sr8mXB9UHyv2godedfy5fkP2iw3+o1/Kqf9RlH1QfMXKDDf6y8VJfiia05hf3ikuNSK/EmD6ANOOlsO92IpP+bD9S2OMpvdUg+E4/qBeDEZJ7mn4mQAAAAAAAAAAAAAAAAAAAAAAAABpaXxuqpuS9p9GC7ZPd4JJvgjdOO0xjtbWbT6FO8I98r9OXmrfD3lk2pUFVsrevW31t95XKsUSmVymdWVs6prVJojKZROYEarRrVLFkpGvUYVVM16kS6ZRMDXkrdnkRWJnHdJrg2iUymYFv96V1ur1VwqzX4MlHlDio7sVW8a83+LNGbKJMYPsR5X42O7E1PFp/iiyPLvHr/MPxp0n/AMTnpFchkHVw5xcct9SL40ofkkXR5zcYvo0nxpy/KSOLIscw13kOdPE9dGi+EZr/AJsvjzr1OvCwfCpJfkzztkLDmGva+SvLyni56qdLVTfs9PPFvsvZWZ2B5Dzc6Jz1oSa2Ram37jUl97IuDZ68c/UyrAAGVYMgAAAAAAHyeUukdTStF2qTeSHc2ulP4Vd8bLrOMi0kktyVkT01pPX15TT6Eb06Xek+lNe9Jb+yMTTdQ6+ZkZrYcyLqGu6hGVQqLZzKJyISmVuQVKUiqTMykVTkBCTKJsslIoqSArkyiciyTKJsCubKWyybKpAQkytk5FbKMNkTJEDEmbGAoOc0rGsdTyP0Y6tSMVscmlfsvduXhFSlxihR6byG0cqVDPbbO1vcje3m3KXCSOkIUqajFRirJJJJbkkrJEzg0AAAAAAAAHO8ttK6mhq4O1SteEbb4xt8pPwTtftlE6Fs8g07pn+04idZPoL5Oj/Di/a+J3lwaXUa8zalZjNJJLctiM600I1CaqHRG5rSOc1tYY1gGw5EcxRnIyqAWymVymVSqEHMCU5FE5GJTKZSAzKRTKRicyDkBiTKzLZBsojJkWzLIsCLItkmRbAsw9LNJI9e5udGZYyqtblq48XZzf8ARHipHmugcK5STUczbSiu2TaUY+LaXie7aKwSoUoUk75YpN/Wk9spcXJt+Jj3fxY2wAc1AAAAAAwDE5qKcm0kk229iSW1tgchzlab1OHVCD+Ur3j3xpL5yXimo/E31HmcaiGn9NvGYmpiNuV9Ckn1Uo3y7Oq93J98macZnXzMjL6MahNVDQjULFUKNzOM5qqoZ1gGy5kXMo1hB1AOo0BpijSzRbUU0k3KDln29Jyy9VtiW7a27n0dMVMLiYxVPEUIvPHWSnFU5qPXqnq05Xv19nYcG5kXMnI6PTWEpQi5pQ7IqNRO7fY4yd7b9yOblIi5GGyyA2QbMtlUpFBsi2QlIjcCTZhsjcg5AZlIUldlbZ9DRFBOWZ7EtrfYltuB6BzcaKzVVNro0lm41JXjBd9lnf2GenHxuSWjtRhoqStOfyk11qUkrRfuxUY/CfZONu1oABAAAAAADgOdvT+pw6wsH06983bGivb+07R4Zuw7uvWjCMpzkoxinKUnuUUrtvuSR+ceUWm5Y3FVMS72k7U0/o0o7IR7tm198ma8zalUwmWRqGlnJxmdUb8ahZGoaMZliqAbmsM6w1M5nOBsuoYczXzmM4Gw5kXMpczGYC7OYcynOYcwLHIrciEpkHMCbZHMQciLkBNyIuRBzIOQFsTueQmiNdWpwa6N9ZU9yDTt4ycI27HI4zR1LNNHtvN1o3V0HWa21Wsv8OF1Hzk5y4SXYZ9X4R1oAOTQAAAAAAADzbno5RaqhHBwfTr7aluqjF7n78tnCMzx6DNjlNpqWLxlavP6U5KC+rTg8sI+Su+9t9ZpqZ18zIyvUiSZQmTTNC+MixTNZMmpAbCmZzmvmM5gNjWGM5RmM5gL85HOVOZFyAvcyLmUuZjMBbmMORU5EXICxyIuRXmDYEnIJkLluGhdpAdLyV0bKrOFOOyVSSgn2J3cpfDFSl8J77h6MYRjCKtGKjGKXUoqyXkjx3kfpKOFquo6WfLDIulltKdpTe53dlBfaO6ocvcM/ahUj4Ra9Hf0OfrasdYD4lDlZg5f/dL3oyj6tWPpYfSFGp83Wpz92pGX4MwrZAAAAAAAB5Vyx5pYTdSvg5NVJSlN0XJZG5O8skn7N220ns222I8j0nhZYaerrxqUZXtapScb96btdd6uj9YEatOMlllFST3ppNeTNdVMflFQfVKL8bf1WJ2kt8Xxts8z2DTvM1h6s51MPiamHcm5ZHCNSlFvqjHoyS7s2zq2bDlMdzS6TpXdGpQrrqtOVKo/hksv3i9mOJjWLFUN7SGgtIUP8Ro+uu2So66PjUp5kvM+VDFUpO2xNb0pNW4p3L3DGypklIqVKL3T81+jv6B0pLsfjZ+TszUqLswuUSco701xTRhVSi+5hsrVQzmAk5GLmLkWyCTkRzGDAEkzFzFzFwJo+noqKV5y3RTk++25eLsvE+XT2s+rUqqnTjFtJyebapbo3UF0dq6WZ717CFuD7mHxMIxSclfe7pq8m7ye23W2Wusu3/3gczCvOcUpTqtX2RhWzxXDN28WYq1mticYv/dSlB+MkzPS46KVc16uIR8GeknBJzaa/wBtSE78Fsb8i+GJc3shLLa+aUcq4JN3LLqPtUdN1qfzdepD3asoryTPoYfl/j6f+YzLsnThL1tf1OY1UntSdu3cvN7DXrShH2qi4RWZ+e78RcHoWG52cRH5zD0p+7KdN+ub8D7WB52sPLZUw1aPa4ZaiXrF+h47RxLqT1dCi5ze5ZXUk33QS/I9C5Mc3GKr2ljHqafXC61sl2KK6MPHb3GLi/XoX7daP/eoev6GC/8AZHBfu8fN/qCD7hkAigAAHz9J6Ew2JVsRhqVX+JShPybWw+gAOE0jzS6LqXcKVShJ9dGtNJcITzQXCxzmO5mqkduG0i7fVrUb+c4Nf0nrwA/P+N5vdL0d2Gp1l20K8V6TyN+Fzm9IUKlH/E4WtR76lCUI+E7K/mfqQw0XaPypDVTV4zXhL8n+pJ4V9UvT/rc/RelORejsRd1cDRcnvmqahP7cLS9Tl8fzOYKW2hWxFB9SVRVIeKqJy+8Xqpjxd0p9l+DT9EQc2t6PSNIc0uPh8zi6FddlWE6Tt4Z035HN6R5LaToX1ujqsor6VG1aP2abk7cYovZjmtYNYW1a1JSyTThPrjODhJfDst5D+zxfsyX2k/xsa6iYpzjORlS7JLzs/Ujqpdj8Nvqi6j6GApZpJX3vy7/Df4G1LFxcnKM6m20Yxp5ZOMY7I3hKN72SvvPkYLHRUsrftdFvfaL9u3e10fFnYVNI0rXu32J7F+Zn1Y1Hx1Tqye2lTlHtqwSnxWR38NhdS0POzz1J5XvjndOHhd5vJm1hcbVr1FSwlJzl0lamrtWXW3u8Wjo9Hc2OkazvXrQoRe+71tThljaK+0Z2DlYUcPR3W6/ZXX19OW1vwK6ekXUnq8PRc5vqhCVSfG1n6I9c0TzUYCl0q2sxMt96s7Rv3QhZNd0rnZ4DR9GhHJRpQpR+rThGEfKKJtMeH6N5utKYlqVRqjHtqT6SXdCN2nxsdfofmdwkLPE1aleXWl8nDa79TcvvI9KBFaGitDYfDRy4ehCkuvJBJv3pb5eJvgAAAAAAAAAAAAAAAAAAAAAAGtjcBSrRyVqUKkfq1KcZrykmcrpLmu0VW2rC6p9tCpOlb4E8nodmAPI8VzF0XNSp4+tGP0lOnCc2uxTjlS8Ysux/MhhnFKhjK9NpW6cYVYt9uVKDXBO3A9WAHkGC5jKafyuPnP3MPGm/OU5nZ6I5utHYezWHVWS+lWbqfdfQXgjrABClSjFWjFRXYkkvJEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k=",
-      "photo3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTByqlWk0t7xHTmBx18VsEufrd9FeKGey1OaQ&usqp=CAU",
-      "id": 4
+      "model": "TUF Gaming A15",
+      "description": "Ноутбук Asus TUF Gaming A15 AMD Ryzen 7-4800H 8GB DDR 512GB SSD NVIDIA RTX 3050 4GB FHD DOS черный",
+      "color": "Black",
+      "price": 92000,
+      "photo1": "https://www.kivano.kg/images/product/105598/full/1650528570_88630700.jpg",
+      "photo2": "https://www.kivano.kg/images/product/105598/165052856920576_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/105598/16505285697558_full.jpg",
+      "id": 6
+    },
+    {
+      "brand": "MSI",
+      "model": "MSI Katana GF66",
+      "description": "Ноутбук MSI Katana GF66 Intel Core i7-11800H 16GB DDR4 512GB SSD NVIDIA RTX3070 FHD DOS",
+      "color": "Black",
+      "price": 150000,
+      "photo1": "https://www.kivano.kg/images/product/104130/full/1646822210_89726700.png",
+      "photo2": "https://www.kivano.kg/images/product/104130/164682220932892_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/104130/164682221096650_full.jpg",
+      "id": 7
+    },
+    {
+      "brand": "Lenovo",
+      "model": "Legion 5 17ITH6",
+      "description": "Ноутбук Lenovo Legion 5 17ITH6 Intel Core i7-11800H 16GB DDR 1000GB HDD+ 256GB SSD NVIDIA RTX 3050 4GB FHD DOS",
+      "color": "Phantom Blue",
+      "price": 120000,
+      "photo1": "https://www.kivano.kg/images/product/112718/full/1666762392_05296400.jpg",
+      "photo2": "https://www.kivano.kg/images/product/112718/166676239014741_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/112718/166676239075207_full.jpg",
+      "id": 8
+    },
+    {
+      "brand": "Dell",
+      "model": "Dell Alienware m15 R4 Gaming",
+      "description": "Ноутбук Dell Alienware m15 R4 Gaming Intel Core i7-10870H (2.20-5.00GHz), 16GB DDR4, 512GB SSD, NVIDIA RTX 3070 8GB GDDR6, 15.6\"FHD (1920x1080) 144Hz IPS",
+      "color": "Dark Side of the Moon",
+      "price": 140000,
+      "photo1": "https://www.litech.kg/storage/products/April2022/7J1MBszaOhnu13WGBMrA.jpg",
+      "photo2": "https://www.litech.kg/storage/products/April2022/EbCF1kaRqXsU7Y6283rI.jpg",
+      "photo3": "https://www.litech.kg/storage/products/April2022/2oOPKBAKhEAmTPhJHgew.jpg",
+      "id": 9
+    },
+    {
+      "brand": "Acer",
+      "model": "Predator Triton 500SE",
+      "description": "Acer Predator Triton 500 SE Gaming/Creator Laptop | 12th Gen Intel i9-12900H | GeForce RTX 3080 Ti | 16\" WQXGA 300Hz G-SYNC Display | 32GB LPDDR5 | 1TB Gen 4x4 SSD",
+      "color": "Moonlight Grey",
+      "price": 245000,
+      "photo1": "https://m.media-amazon.com/images/I/71HWQq7dX2L.jpg",
+      "photo2": "https://itti.com.np/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/t/r/triton_500_2.jpg",
+      "photo3": "https://i.gadgets360cdn.com/products/large/Predator-Helios-500-DB-905x800-1622180371.jpg?downsize=*:360",
+      "id": 10
+    },
+    {
+      "brand": "Acer",
+      "model": "Acer Aspire A315-56",
+      "description": "Acer Aspire A315-56 Intel Core i3-1005G1 8GB DDR4 1000GB HDD + 120GB SSD FHD DOS",
+      "color": "Indigo Blue",
+      "price": 47000,
+      "photo1": "https://www.kivano.kg/images/product/112128/full/1665570763_65756600.png",
+      "photo2": "https://www.kivano.kg/images/product/112128/166557074525731_full.png",
+      "photo3": "https://www.kivano.kg/images/product/112128/166557074636302_full.png",
+      "id": 11
+    },
+    {
+      "brand": "Lenovo",
+      "model": "Lenovo Ideapad 3",
+      "description": "Ноутбук Lenovo Ideapad 3 Intel Core i5-10210U 8GB DDR 128GB SSD NVidia MX330 2GB FHD DOS",
+      "color": "Gray",
+      "price": 56000,
+      "photo1": "https://www.kivano.kg/images/product/102145/full/1641270001_36821200.jpg",
+      "photo2": "https://www.kivano.kg/images/product/102145/164127000054226_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/102145/164127000076020_full.jpg",
+      "id": 12
+    },
+    {
+      "brand": "MSI",
+      "model": "MSI GF65 Thin",
+      "description": "Ноутбук MSI GF65 Thin Intel Core i5-10500H 8GB DDR4 512GB SSD Nvidia RTX 3060 6GB FHD W10",
+      "color": "Black",
+      "price": 116000,
+      "photo1": "https://www.kivano.kg/images/product/105220/full/1649411594_80493100.jpg",
+      "photo2": "https://www.kivano.kg/images/product/105220/16494115933026_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/105220/164941159345695_full.jpg",
+      "id": 13
+    },
+    {
+      "brand": "HP",
+      "model": "HP 250 G8",
+      "description": "Ноутбук HP 250 G8 Intel Core i3-1115G4 8GB DDR4 256GB SSD FHD DOS",
+      "color": "Silver",
+      "price": 40000,
+      "photo1": "https://www.kivano.kg/images/product/111877/full/1665046914_94353700.jpg",
+      "photo2": "https://www.kivano.kg/images/product/111877/166504691351546_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/111877/166504691439677_full.jpg",
+      "id": 14
+    },
+    {
+      "brand": "Asus",
+      "model": "Zenbook Flip Q508UG-212.R7TBL",
+      "description": "Ноутбук Asus Zenbook Flip Q508UG-212.R7TBL AMD Ryzen 7 5700U 8GB DDR4 128GB SSD NVIDIA MX450 FHD DOS",
+      "color": "Silver",
+      "price": 76000,
+      "photo1": "https://www.kivano.kg/images/product/112901/full/1666956605_07937400.jpg",
+      "photo2": "https://www.kivano.kg/images/product/112901/16669566023053_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/112901/166695660241587_full.jpg",
+      "id": 15
+    },
+    {
+      "brand": "Asus",
+      "model": "VivoBook X1500EA-EJ2399W",
+      "description": "Ноутбук Asus VivoBook X1500EA-EJ2399W Intel Core i5-1135G7 8GB DDR4 1000GB SSD FHD DOS",
+      "color": "Black",
+      "price": 55000,
+      "photo1": "https://www.kivano.kg/images/product/113165/full/1667387074_51333400.jpg",
+      "photo2": "https://www.kivano.kg/images/product/113165/166738707345221_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/113165/166738707367538_full.jpg",
+      "id": 16
+    },
+    {
+      "brand": "Asus",
+      "model": "Expertbook P1512CEA",
+      "description": "Ноутбук Asus Expertbook P1512CEA Intel Core i3-1115G4 12GB DDR4 128GB SSD FHD DOS",
+      "color": "Slate Gray",
+      "price": 40000,
+      "photo1": "https://www.kivano.kg/images/product/113169/full/1667441992_57120400.jpg",
+      "photo2": "https://www.kivano.kg/images/product/113169/166744199042837_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/113169/166744199117748_full.jpg",
+      "id": 17
+    },
+    {
+      "brand": "Acer",
+      "model": "Aspire A315-58-34X1",
+      "description": "Ноутбук Acer Aspire A315-58-34X1 Intel Core i3-1115G4 20GB DDR4 512GB SSD FHD DOS",
+      "color": "Silver",
+      "price": 45000,
+      "photo1": "https://www.kivano.kg/images/product/113152/full/1667383603_55712700.jpg",
+      "photo2": "https://www.kivano.kg/images/product/113152/166738360210571_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/113152/16673836024742_full.jpg",
+      "id": 18
+    },
+    {
+      "brand": "Acer",
+      "model": "Aspire A315-58-37M9",
+      "description": "Ноутбук Acer Aspire A315-58-37M9 Intel Core i3-1115G4 4GB DDR4 256GB SSD FHD DOS",
+      "color": "Electric Blue",
+      "price": 36000,
+      "photo1": "https://www.kivano.kg/images/product/113157/full/1667385655_07413500.jpg",
+      "photo2": "https://www.kivano.kg/images/product/113157/16673856536028_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/113157/166738565362876_full.jpg",
+      "id": 19
+    },
+    {
+      "brand": "Acer",
+      "model": "Extensa EX215-52-38SC",
+      "description": "Ноутбук Acer Extensa EX215-52-38SC Intel Core i3-1005G1 8GB DDR4 1000GB HDD + 128GB SSD FHD DOS",
+      "color": "Black",
+      "price": 39000,
+      "photo1": "https://www.kivano.kg/images/product/107551/full/1655374628_29052600.jpg",
+      "photo2": "https://www.kivano.kg/images/product/107551/16553746271124_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/107551/165537462717063_full.jpg",
+      "id": 20
+    },
+    {
+      "brand": "Acer",
+      "model": "A315-34",
+      "description": "Ноутбук Acer A315-34 Intel Pentium N5030 8GB DDR4 256GB SSD DOS",
+      "color": "Black",
+      "price": 35000,
+      "photo1": "https://www.kivano.kg/images/product/97830/full/1631702270_43545500.jpg",
+      "photo2": "https://www.kivano.kg/images/product/97830/163170226932141_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/97830/163170226917208_full.jpg",
+      "id": 21
+    },
+    {
+      "brand": "Dell",
+      "model": "G15 5510",
+      "description": "Ноутбук Dell G15 5510 Intel Core i5-10500H 16GB DDR4 512GB SSD RTX3050 FHD",
+      "color": "Gray",
+      "price": 93000,
+      "photo1": "https://www.kivano.kg/images/product/103242/full/1644383019_07292900.jpg",
+      "photo2": "https://www.kivano.kg/images/product/103242/164438301641718_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/103242/164438301784013_full.jpg",
+      "id": 22
+    },
+    {
+      "brand": "Dell",
+      "model": "Vostro 3500",
+      "description": "Ноутбук Dell Vostro 3500 Intel Core i5-1135G7 8GB DDR4 1000GB HDD + 512GB SSD NVIDIA MX330 FHD DOS",
+      "color": "Gray",
+      "price": 78000,
+      "photo1": "https://www.kivano.kg/images/product/97157/full/1630651102_09623000.jpg",
+      "photo2": "https://www.kivano.kg/images/product/97157/163065110119773_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/97157/163065110199153_full.jpg",
+      "id": 23
+    },
+    {
+      "brand": "Gigabyte",
+      "model": "A5 K1-BUS2150SB",
+      "description": "Ноутбук Gigabyte A5 K1-BUS2150SB AMD Ryzen 7 5800H 16GB DDR 1000GB SSD Nvidia RTX 3060 6GB FHD W11",
+      "color": "Black",
+      "price": 125000,
+      "photo1": "https://www.kivano.kg/images/product/110425/full/1662029300_54326000.jpg",
+      "photo2": "https://www.kivano.kg/images/product/110425/166202929824259_full.jpg",
+      "photo3": "https://www.kivano.kg/images/product/110425/166202929832530_full.jpg",
+      "id": 24
     }
   ]
 }
