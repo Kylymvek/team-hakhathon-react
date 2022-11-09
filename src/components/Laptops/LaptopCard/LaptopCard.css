@@ -1,0 +1,6 @@
+.card-hover:hover {
+  background-color: rgb(244, 100, 28);
+  width: 270px;
+  height: 300px;
+  transition: 1s;
+}

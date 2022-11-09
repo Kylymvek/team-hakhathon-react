@@ -6,19 +6,20 @@ import LaptopsList from "./components/Laptops/LaptopsList/LaptopsList";
 // import AddLaptop from "./components/Adminushka/AddLapTop/AddLaptop";
 import Footer from "./components/Footer/Footer";
 import ProductContextProvider from "./context/LaptopContextProvider";
-
+import "./components/Swiper/style.css";
+import BasketContextProvider from "./context/BasketContextProvider";
 
 const App = () => {
   return (
-  
-    <ProductContextProvider>
-      <Navbar />
-      <HandleSwiper />
-      <MainRoutes />
-      {/* <AddLaptop /> */}
-      {/* <LaptopsList /> */}
-      <Footer />
-    </ProductContextProvider>
+    <BasketContextProvider>
+      <ProductContextProvider>
+        <Navbar />
+        <MainRoutes />
+        {/* <AddLaptop /> */}
+        {/* <LaptopsList /> */}
+        <Footer />
+      </ProductContextProvider>
+    </BasketContextProvider>
   );
 };
 
