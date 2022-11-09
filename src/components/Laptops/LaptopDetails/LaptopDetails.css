@@ -2,9 +2,10 @@
   justify-content: center;
 }
 .Swiper .swiper-slide {
-  margin: 40px 0;
+margin: 40px 0;
   cursor: pointer;
 }
+  
 .Swiper .swiper-slide.swiper-slide-thumb-active {
   border-bottom: 5px solid #1b5e20;
 }
@@ -15,3 +16,4 @@
 .Swiper img {
   width: 50%;
 }
+

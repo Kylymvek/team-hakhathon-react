@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { createContext, useReducer } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const laptopContext = createContext(); // облако
 
@@ -9,6 +9,7 @@ const API = "http://localhost:8000/laptops";
 const INIT_STATE = {
   laptops: null,
   laptopDetails: null,
+  pageTotalCount: 1,
 };
 
 function reducer(prevState, action) {
@@ -17,6 +18,7 @@ function reducer(prevState, action) {
       return {
         ...prevState,
         laptops: action.payload.data,
+        pageTotalCount: Math.ceil(action.payload.headers["x-total-count"] / 3),
       };
     case "GET_ONE_LAPTOP":
       return { ...prevState, laptopDetails: action.payload };
@@ -27,6 +29,8 @@ function reducer(prevState, action) {
 
 const LaptopContextProvider = props => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
+
+  const location = useLocation();
 
   const navigate = useNavigate();
 
@@ -41,7 +45,7 @@ const LaptopContextProvider = props => {
 
   //! read
   async function readLaptop() {
-    const res = await axios(API);
+    const res = await axios(`${API}${location.search}`);
     dispatch({
       type: "GET_LAPTOP",
       payload: res,
@@ -60,10 +64,10 @@ const LaptopContextProvider = props => {
   }
 
   //! edit
-  // async function editLaptop() {
-  //   await axios.patch(`${API}/${id}`, editedObj);
-  //   readLaptop();
-  // }
+  async function editLaptop(id, editedObj) {
+    await axios.patch(`${API}/${id}`, editedObj);
+    readLaptop();
+  }
 
   //! функция для детального обзора
 
@@ -80,9 +84,10 @@ const LaptopContextProvider = props => {
     readLaptop,
     deleteLaptop,
     readOneLaptop,
-    // editLaptop,
+    editLaptop,
     laptopsArr: state.laptops,
     laptopDetails: state.laptopDetails,
+    pageTotalCount: state.pageTotalCount,
   };
 
   return (
