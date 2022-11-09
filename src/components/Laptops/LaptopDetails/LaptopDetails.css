@@ -1,17 +1,19 @@
 .Swiper .swiper-wrapper {
   justify-content: center;
 }
-.Swiper .swiper-slide.swiper-slide-details {
-  margin: 40px 0;
+.Swiper .swiper-slide {
+margin: 40px 0;
   cursor: pointer;
 }
+  
 .Swiper .swiper-slide.swiper-slide-thumb-active {
   border-bottom: 5px solid #1b5e20;
 }
 
 .Swiper2 img {
-  width: 100%;
+  width: 50%;
 }
 .Swiper img {
-  width: 100%;
+  width: 50%;
 }
+

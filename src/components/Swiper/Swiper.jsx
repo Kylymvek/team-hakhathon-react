@@ -19,7 +19,8 @@ const HandleSwiper = () => {
   return (
     <>
       <Swiper
-        style={{ width: "100%" }}
+        style={{ width: "80%", marginTop: "10px" }}
+        spaceBetween={10}
         centeredSlides={true}
         autoplay={{
           delay: 2000,

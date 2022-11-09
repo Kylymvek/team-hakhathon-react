@@ -43,7 +43,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-
 const LiveSearch = () => {
   const [searchValue, setSearchValue] = useState("");
   const [paramsSearch, setParamsSearch] = useSearchParams();

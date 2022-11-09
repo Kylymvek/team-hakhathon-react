@@ -41,11 +41,15 @@ const LaptopDetails = () => {
   return (
     <>
       {laptopDetails ? (
-        <Container sx={{ marginTop: "40px" }}>
+        <Container
+          sx={{
+            marginTop: "40px",
+            marginBottom: "40px",
+          }}>
           <Grid container spacing={2}>
-            <Grid item xs={6}>
+            <Grid item xs={10}>
               <Swiper
-                className="mySwiper2"
+                className="Swiper2"
                 spaceBetween={10}
                 thumbs={{ swiper: thumbsSwiper }}>
                 <SwiperSlide>
@@ -64,8 +68,8 @@ const LaptopDetails = () => {
                 slidesPerView={4}
                 freeMode={true}
                 watchSlidesProgress={true}
-                className="mySwiper">
-                <SwiperSlide className="swiper-slide-details">
+                className="Swiper">
+                <SwiperSlide>
                   <Paper elevation={3}>
                     <img src={laptopDetails.photo1} alt={laptopDetails.brand} />
                   </Paper>
@@ -82,12 +86,14 @@ const LaptopDetails = () => {
                 </SwiperSlide>
               </Swiper>
             </Grid>
-            <Grid item xs={6}>
-              <Paper elevation={3} sx={{ padding: "10px", marginTop: "40px" }}>
+            <Grid item xs={10}>
+              <Paper
+                elevation={8}
+                sx={{ padding: "10px", marginBottom: "10px" }}>
                 <Typography variant="h4">
-                  {laptopDetails.brand} <LaptopIcon sx={{ fontSize: "30px" }} />
+                  {laptopDetails.brand} <LaptopIcon sx={{ fontSize: "20px" }} />
                 </Typography>
-                <Typography variant="h5">{laptopDetails.model}</Typography>
+                <Typography variant="h6">{laptopDetails.model}</Typography>
                 <hr />
                 <Typography sx={{ marginTop: "30px" }}>
                   О ноутбуке:{<span> </span>}
@@ -101,9 +107,9 @@ const LaptopDetails = () => {
                   sx={{
                     fontSize: "25px",
                     fontWeight: 700,
-                    mt: "20px",
                     display: "flex",
                     alignItems: "center",
+                    textAlign: "center",
                   }}>
                   Цена: {laptopDetails.price} сом
                   <Button
@@ -118,12 +124,12 @@ const LaptopDetails = () => {
                   sx={{
                     mt: "15px",
                     display: "flex",
-                    justifyContent: "space-between",
+                    justifyContent: "center",
                   }}>
                   <Button
                     variant="contained"
                     color="error"
-                    sx={{ width: "48%" }}
+                    sx={{ width: "100px" }}
                     onClick={() => deleteLaptop(laptopDetails.id)}>
                     Delete
                   </Button>
