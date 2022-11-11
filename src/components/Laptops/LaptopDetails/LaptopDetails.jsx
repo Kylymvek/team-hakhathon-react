@@ -136,7 +136,7 @@ const LaptopDetails = () => {
                   <Button
                     variant="contained"
                     color="warning"
-                    sx={{ width: "48%" }}
+                    sx={{ width: "100px" }}
                     onClick={() => navigate(`/edit/${laptopDetails.id}`)}>
                     Edit
                   </Button>
