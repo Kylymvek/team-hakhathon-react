@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import { orange } from "@mui/material/colors";
-import "./AddLaptop.css";
+import "./AddLapTop.css";
 import { useContext } from "react";
 import { laptopContext } from "../../../context/LaptopContextProvider";
 
-const AddLaptop = () => {
-  const { addLaptop } = useContext(laptopContext);
+const AddLapTop = () => {
+  const { AddLapTop } = useContext(laptopContext);
   const [brand, setBrand] = useState("");
   const [model, setModel] = useState("");
   const [description, setDescription] = useState("");
@@ -43,7 +43,7 @@ const AddLaptop = () => {
       photo3,
     };
 
-    addLaptop(lapObj);
+    AddLapTop(lapObj);
     setBrand("");
     setModel("");
     setDescription("");
@@ -126,4 +126,4 @@ const AddLaptop = () => {
   );
 };
 
-export default AddLaptop;
+export default AddLapTop;
